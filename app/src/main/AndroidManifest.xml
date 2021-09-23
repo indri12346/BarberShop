@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.esaku.barbershop">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<!--        tools:replace="android:appComponentFactory"-->
+<!--        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"-->
+<!--        <activity android:name=".populaterecyclerview.print.PrintActivity"></activity>-->
+<!--        <activity android:name=".populaterecyclerview.ui.StrukActivity" /> &lt;!&ndash; <activity android:name=".SplashhActivity"></activity> &ndash;&gt;-->
+        <activity android:name=".populaterecyclerview.ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name=".ListActivity" -->
+        <!-- android:label="@string/title_activity_list" -->
+        <!-- android:theme="@style/Theme.Barbershop.NoActionBar" > -->
+        <!-- </activity> -->
+        <activity android:name=".populaterecyclerview.ui.TransaksiActivity" />
+        <activity android:name=".populaterecyclerview.ui.Closing2Activity" />
+        <activity android:name=".populaterecyclerview.ui.Closing1Activity" />
+        <activity android:name=".populaterecyclerview.ui.ClosingActivity" />
+        <activity android:name=".populaterecyclerview.ui.MainActivity" />
+        <activity android:name=".populaterecyclerview.ui.InformasiActivity" />
+        <activity android:name=".populaterecyclerview.ui.HomeActivity" />
+        <activity android:name=".populaterecyclerview.ui.ProfileActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".populaterecyclerview.ui.HomeActivity"
+    android:background="#14213D">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgbarber"
+                    android:layout_width="28sp"
+                    android:layout_height="30sp"
+            android:layout_marginLeft="323sp"
+            android:layout_marginRight="22sp"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/user" />
+
+        <TextView
+
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Barber Name"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="32dp"
+            android:fontFeatureSettings="Poppins"
+            android:text="Sukiman"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/maskgroup"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Pendapatan"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pendapatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/closing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:layout_marginBottom="13dp"
+                android:text="Closing"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/putih"
+        android:layout_marginBottom="-50dp"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/buttondata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="Pelanggan Hari Ini"
+                android:textColor="#14213D"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="10 Transaksi"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerview"
+                android:layout_height="match_parent"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_alignParentBottom="true"
+                android:layout_width="311dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="60dp"
+                android:id="@+id/btncetakstruk"
+                android:backgroundTint="#14213D"
+                android:layout_gravity="center"
+                android:elevation="4dp"
+                app:cardCornerRadius="40dp"
+                android:layout_marginTop="40dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/cetak_struk"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/button"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <TextView-->
+<!--                android:id="@+id/pelanggan"-->
+<!--                android:layout_width="124dp"-->
+<!--                android:layout_height="17dp"-->
+<!--                android:layout_marginRight="50dp"-->
+<!--               android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:text="93746-3975-9320750"-->
+<!--                android:textColor="@color/black" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginLeft="20pt"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="5"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="20sp"-->
+<!--                android:background="@drawable/kotak"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="65dp"-->
+<!--                android:text="Rp 25.000"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_marginRight="12dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="311dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:id="@+id/btncetakstruk"-->
+<!--                android:backgroundTint="#14213D"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:elevation="4dp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                android:layout_marginTop="40dp">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="20dp"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:text="@string/cetak_struk"-->
+<!--                        android:textColor="@color/white" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:src="@drawable/button"-->
+<!--                        android:layout_marginRight="40dp"-->
+<!--                        android:layout_marginTop="10dp" />-->
+
+<!--                </RelativeLayout>-->
+
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+<!--        </FrameLayout>-->
+
+    </LinearLayout>
+
+<!--    </LinearLayout>-->
+<!--    <FrameLayout-->
+<!--        android:layout_width="400dp"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/putih"-->
+<!--        android:layout_marginBottom="-40dp"-->
+<!--        android:layout_alignParentBottom="true">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="32dp"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:text="Pelanggan Hari Ini"-->
+<!--            android:textColor="#14213D"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="70pt"-->
+<!--            android:layout_height="17pt"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginStart="50dp"-->
+<!--            android:text="10 Transaksi"-->
+<!--            android:textSize="12dp" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginLeft="20pt"-->
+<!--            android:layout_marginTop="71dp"-->
+<!--            android:text="5"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginEnd="32dp"-->
+<!--            android:gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"-->
+<!--            android:background="@drawable/kotak"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:id="@+id/pelanggan"-->
+<!--            android:layout_width="124pt"-->
+<!--            android:layout_height="17pt"-->
+<!--            android:layout_marginLeft="40pt"-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            android:text="93746-3975-9320750"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="40pt"-->
+<!--            android:layout_marginTop="90dp"-->
+<!--            android:text="Rp 25.000"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="311dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:id="@+id/btncetakstruk"-->
+<!--            android:backgroundTint="#14213D"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:elevation="4dp"-->
+<!--            app:cardCornerRadius="40dp"-->
+<!--            android:layout_marginTop="70dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                >-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:text="@string/cetak_struk"-->
+<!--                    android:textColor="@color/white" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:src="@drawable/button"-->
+<!--                    android:layout_marginRight="40dp"-->
+<!--                    android:layout_marginTop="10dp" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--    </FrameLayout>-->
+
+
+</RelativeLayout>
